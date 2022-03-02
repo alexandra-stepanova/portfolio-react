@@ -1,0 +1,82 @@
+.contact {
+  @include sectionWidth();
+  @include flexDescription();
+  width: 100%;
+  align-items: center;
+  padding: 120px 0 80px;
+  @media screen and (min-width:767px) and (max-width: 1040px) {
+    padding: 100px 0 100px;
+  }
+}
+
+.contact__form {
+  @include flexDescription();
+  margin-top: 88px;
+  width: 27.7%;
+
+  @media screen and (min-width: 701px) and (max-width: 1000px) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: 501px) and (max-width: 700px) {
+    width: 60%;
+  }
+  @media screen and (max-width: 500px) {
+    width: 80%;
+  }
+}
+
+.contact__input {
+  width: 100%;
+  border: 1px solid #e8ecf4;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fff;
+  padding: 8px 16px;
+  font-size: 1.1rem;
+  margin: 0;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  &:focus {
+    border: 2px solid rgba(30, 85, 250, 0.47);
+  }
+}
+
+.contact__input-hidden {
+  height: 30px;
+  padding: 4px 8px;
+}
+
+.contact__input-error {
+  font-size: 0.687em;
+  line-height: 13px;
+  color: #ff004c;
+}
+
+.contact__button {
+  @include buttonStyle();
+  align-self: flex-end;
+  width: 20%;
+  background-color: #ffc4ff;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0;
+  &:hover {
+    background-color: #2d628b;
+  }
+  &::after {
+    background-color: #2d628b;
+  }
+}
+
+.contact__button_disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.2;
+  background-color: #f8f8f8;
+  color: #c2c2c2
+}
