@@ -1,0 +1,80 @@
+.promo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px 144px;
+  @media screen and (min-width: 501px) and (max-width: 550px) {
+    padding: 20px 0 40px;
+  }
+  @media screen and (min-width: 331px) and (max-width: 500px) {
+    flex-direction: column;
+    padding: 20px 0 80px;
+  }
+  @media screen and (max-width: 330px) {
+    padding: 15px 0 60px;
+  }
+}
+
+.promo__container {
+  @include flexDescription();
+  width: 38%;
+  padding: 40px 8px 0;
+  margin-left: 5%;
+  @media screen and (min-width: 1001px) and (max-width: 1150px) {
+    margin: 0 auto;
+    width: 55%;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 0;
+  }
+}
+
+.promo__span {
+  display: block;
+}
+
+.title {
+  font-family: "Zetafonts";
+  font-size: 4em;
+  letter-spacing: -1.5px;
+  line-height: 76.8px;
+  margin: 0 auto 24px;
+  @media screen and (max-width: 500px) {
+    font-size: 3em;
+    letter-spacing: -0.5px;
+    line-height: 60px;
+  }
+}
+
+.subtitle {
+  font-family: "Biotif";
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 36px;
+
+  @media screen and (max-width: 400px) {
+    margin: 0 auto;
+    font-size: 1.12em;
+  }
+}
+
+.promo__image {
+  background-image: url(../../images/IMG_4588.JPG);
+  background-size: cover;
+  background-position: top;
+  border-radius: 150px 40px 150px 170px;
+  width: 50%;
+  height: 700px;
+  @media screen and (min-width: 1000px) and (max-width: 1150px) {
+    width: 40%;
+    height: 500px;
+    border-radius: 25%;
+  }
+  @media screen and (max-width: 1000px) {
+    display: none;
+    opacity: 0;
+    z-index: -1;
+  }
+}
