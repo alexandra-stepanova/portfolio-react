@@ -1,0 +1,22 @@
+@mixin sectionWidth {
+  margin: 0 auto;
+}
+
+@mixin flexDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin fontStyle {
+  font-family: "Zetafonts";
+  font-size: 3em;
+  letter-spacing: -1.5px;
+  line-height: 100%;
+  padding-bottom: 4px;
+}
+
+@mixin buttonStyle {
+  font-size: 1.12em;
+  line-height: 27px;
+}
