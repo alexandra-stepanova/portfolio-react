@@ -1,0 +1,77 @@
+.footer {
+  @include flexDescription();
+  width: 100%;
+  background-image: url(../../images/4k-forest.png);
+  background-size: cover;
+  flex-shrink: 0;
+  padding-top: 30%;
+  padding-bottom: 30px;
+  @media screen and(min-width: 1200px) {
+    padding-top: 20%;
+  }
+  @media screen and (min-width:767px) and (max-width: 1040px) {
+    padding-bottom: 60px;
+    padding-top: 50%;
+  }
+}
+
+.footer__container {
+  @include sectionWidth;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.footer__copyright {
+  font-size: 0.8em;
+  @media screen  and (max-width: 540px) {
+    font-size: 0.6em;
+    margin-top: 12px;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__links {
+  box-sizing: border-box;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  width: 40%;
+  @media screen and (min-width: 701px) {
+    margin-left: 24px;
+    margin-top: 0;
+  }
+  @media screen and (max-width: 700px) {
+    margin-top: 24px;
+    margin-left: 0;
+  }
+}
+
+.footer__social-icons {
+  cursor: pointer;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+.footer__image {
+  width: 25px;
+  height: 25px;
+  &:hover {
+    background-color: #7ec1d8;
+    border-radius: 80%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 41px 41px 92px #7ec1d8, -41px -41px 92px #aaffff;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 540px) {
+    width: 20px;
+    height: 20px;
+  }
+}
