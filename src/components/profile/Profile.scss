@@ -1,0 +1,86 @@
+.profile {
+  width: 100%;
+  padding: 80px 0 40px;
+  @media screen and (max-width: 999px) {
+    padding: 40px 5px 80px;
+  }
+}
+
+.profile__container {
+  width: 100%;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 300px 600px;
+  grid-template-areas: "avatar content";
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  @media screen and (min-width: 950px) and (max-width: 1100px) {
+    grid-gap: 50px;
+    grid-template-columns: 300px 500px;
+  }
+  @media screen and (min-width: 850px) and (max-width: 949px) {
+    grid-gap: 40px;
+    grid-template-columns: 300px 400px;
+  }
+  @media screen and (min-width: 704px) and (max-width: 849px) {
+    grid-gap: 30px;
+    grid-template-columns: 300px 300px;
+  }
+  @media screen and (min-width: 592px) and (max-width: 703px) {
+    grid-gap: 30px;
+    grid-template-columns: 250px 250px;
+  }
+  @media screen and (min-width: 336px) and (max-width: 591px) {
+    grid-gap: 40px;
+    grid-template-columns: 300px;
+    grid-template-areas:
+      "avatar"
+      "content";
+    justify-content: center;
+  }
+  @media screen and (max-width: 335px) {
+    grid-gap: 30px;
+    grid-template-columns: 280px;
+    grid-template-areas:
+      "avatar"
+      "content";
+    justify-content: center;
+  }
+}
+
+.profile__avatar {
+  grid-area: avatar;
+  width: 100%;
+  height: 100%;
+}
+
+.profile__link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.profile__avatar-img {
+  background-image: url(../../images/DSC_3937.jpg);
+  background-size: cover;
+  background-position: bottom;
+  width: 300px;
+  height: 400px;
+  display: block;
+  border-radius: 50px;
+  transition: all 0.4s;
+  margin: auto auto;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.profile__content {
+  grid-area: content;
+  justify-content: center;
+  @media screen and (min-width: 1101px) {
+    margin-top: 90px;
+  }
+}
