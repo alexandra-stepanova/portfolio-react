@@ -1,0 +1,14 @@
+.sectionHeader {
+  @include flexDescription();
+}
+
+.sectionHeader__title {
+  @include fontStyle();
+}
+
+.border {
+    width: 100px;
+    height: 4px;
+    background-color: #ffc4ff;
+    align-self: center;
+}
