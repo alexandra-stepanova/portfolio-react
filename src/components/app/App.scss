@@ -1,0 +1,11 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    width: 100%;
+    background: rgb(174,205,229);
+    margin: 0 auto;
+    font-family: 'Biotif', 'Zetafonts', Arial, sans-serif;
+    color: #fff;
+    scroll-behavior: smooth;
+}
