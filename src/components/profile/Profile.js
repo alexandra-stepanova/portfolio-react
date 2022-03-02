@@ -33,9 +33,9 @@ function Profile() {
             data-aos-duration="2000"
             data-aos-easing="ease-in-out"
           >
-            I started studying the web-development in June 2020. First, I
-            finished free courses in Finland. Then I had decided to upgraded my
-            knowledge(which was 0,9%) and participated in the Russian Bootcamp 
+            I consider myself as a pashionat frontend developer who is keen to learn and develop. 
+            I finished free courses in Finland. Then I had decided to upgraded my
+            knowledge(which was 0,9%) and participated in the Bootcamp 
             <a
               className="profile__link"
               href="https://practicum.yandex.com/"
