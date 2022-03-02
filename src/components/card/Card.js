@@ -35,8 +35,8 @@ function Card(card) {
           data-aos-easing="ease-in-out"
         >
           <h4 className="card__title">{card.name}</h4>
-          <p className="card__subtitle">{card.discription}</p>
-          <p className="card__subtitle">{card.stack}</p>
+          <p className="card__subtitle">Description: {card.discription}</p>
+          <p className="card__subtitle">Technologies used: {card.stack}</p>
           <a className="card__link card__subtitle" href={card.link}>
             View Project
           </a>
