@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 
 function Promo() {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 2000 });
     Aos.refresh();
   }, []);
 
@@ -15,7 +15,7 @@ function Promo() {
           className="title"
           data-aos="fade-up"
           data-aos-delay="10"
-          data-aos-duration="1000"
+          data-aos-duration="2000"
           data-aos-easing="ease-in-out"
         >
           <span className="promo__span">Hi. I'm Sasha.</span>
@@ -25,7 +25,7 @@ function Promo() {
           className="subtitle"
           data-aos="fade-up"
           data-aos-delay="20"
-          data-aos-duration="2000"
+          data-aos-duration="3000"
           data-aos-easing="ease-in-out"
         >
           Currently, I'm a freelance developer looking to land a permanent job.
