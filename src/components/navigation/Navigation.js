@@ -5,9 +5,9 @@ function Navigation(props) {
 
   return (
     <ul className="navigation">
-      <li>
+      <li className="margin-btn">
         <Link
-        className="link"
+        className="link margin-btn"
         activeClass="link-underline"
           to="profile"
           spy={true}
@@ -19,7 +19,7 @@ function Navigation(props) {
           About
         </Link>
       </li>
-      <li>
+      <li className="margin-btn">
         <Link
         className="link"
         activeClass="link-underline"
