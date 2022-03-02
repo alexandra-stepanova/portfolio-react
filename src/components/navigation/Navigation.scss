@@ -1,0 +1,42 @@
+.navigation {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  margin: 0 auto;
+  @media screen and (max-width: 700px) {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    flex-grow: 1;
+  }
+}
+
+.link {
+  font-size: 1.4em;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Biotif";
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 3px solid transparent;
+
+  &:hover {
+    opacity: 0.6;
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 1.7em;
+    margin: 10px 0 2px;
+    padding: 0;
+    :first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+.link-underline {
+  border-color: #ffc4ff;
+}
