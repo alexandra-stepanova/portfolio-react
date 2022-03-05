@@ -33,22 +33,15 @@ function Profile() {
             data-aos-duration="2000"
             data-aos-easing="ease-in-out"
           >
-            I consider myself as a pashionat frontend developer who is keen to learn and develop. 
-            I finished free courses in Finland. Then I had decided to upgraded my
-            knowledge(which was 0,9%) and participated in the Bootcamp 
-            <a
-              className="profile__link"
-              href="https://practicum.yandex.com/"
-            >
-              _Yandex-Practicum_
-            </a>
-            . During the course, we'd been guided and mentored by experienced practising developers.
-            During my study, I used tools like VSCode, Git. 
-            When studied backend, used: Express, MongoDB, Mongoose, Nodemon. Created
+            I consider myself as a pashionat frontend developer who is keen to
+            learn and develop. I am a recent graduate of a year-long intensive
+            boot camp programme emphasising front-end web development. During
+            the course, we'd been guided and mentored by experienced practising
+            developers. During my study, I used tools like VSCode, Git. When
+            studied backend, used: Express, MongoDB, Mongoose, Nodemon. Created
             security for a web application with Helmet,
             secret-key(.env(secret-key), express Rate Limit, stored user's
             informatin in local storage and cookies.
-
           </p>
           <p
             className="subtitle"
