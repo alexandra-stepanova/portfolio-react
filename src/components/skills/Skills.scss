@@ -7,7 +7,7 @@
     justify-content: start;
   }
   @media screen and (max-width: 999px) {
-      padding: 20px 0 110px;
+    padding: 20px 0 110px;
   }
 }
 
@@ -23,8 +23,9 @@
   @media screen and (max-width: 999px) {
     width: 100%;
     grid-template-columns: repeat(auto-fit, 100px);
+    justify-content: space-between;
     margin-top: 32px;
-    grid-row-gap: 24px;
+    grid-row-gap: 20px;
   }
 }
 
@@ -32,14 +33,15 @@
   font-size: 1.3em;
   line-height: 30px;
   font-family: "Zetafonts";
-
+  box-shadow: inset 0 0 0 23px #fff;
+  color: #84b3d7;
   border-radius: 10px;
   padding: 5px;
   //box-shadow: 8px -8px 15px #84b3d7, 8px 8px 15px #84b3d7;
   cursor: pointer;
   &:hover {
-    box-shadow: inset 0 0 0 23px #fff;
-    color:#84b3d7;
+    box-shadow:inset 0 0 0 23px #aecde5;
+    color: #fff;
   }
   @media screen and (max-width: 999px) {
     font-size: 1.1em;

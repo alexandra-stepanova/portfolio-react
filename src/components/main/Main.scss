@@ -4,10 +4,11 @@
     @include sectionWidth();
     max-width: 1440px;
     box-sizing: border-box;
+    margin: 0 auto;
     @media screen and (min-width: 501px) and (max-width: 1000px) {
         width: 85%; 
     }
     @media screen and (max-width: 500px) {
-        width: 85%;  
+        width: 90%;  
     }
 }

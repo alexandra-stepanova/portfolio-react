@@ -2,7 +2,7 @@
   width: 100%;
   padding: 80px 0 40px;
   @media screen and (max-width: 999px) {
-    padding: 40px 5px 80px;
+    padding: 40px 0 80px;
   }
 }
 
@@ -33,7 +33,7 @@
   }
   @media screen and (min-width: 336px) and (max-width: 591px) {
     grid-gap: 40px;
-    grid-template-columns: 300px;
+    grid-template-columns: 100%;
     grid-template-areas:
       "avatar"
       "content";
@@ -41,7 +41,7 @@
   }
   @media screen and (max-width: 335px) {
     grid-gap: 30px;
-    grid-template-columns: 280px;
+    grid-template-columns: 100%;
     grid-template-areas:
       "avatar"
       "content";
@@ -62,7 +62,7 @@
 }
 
 .profile__avatar-img {
-  background-image: url(../../images/DSC_3937.jpg);
+  background-image: url(../../images/IMG_4588.JPG);
   background-size: cover;
   background-position: bottom;
   width: 300px;
