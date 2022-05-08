@@ -21,12 +21,10 @@ function Header(props) {
         <Links />
       </MediaQuery>
       <MediaQuery maxWidth={700}>
-        <div className="header__sandwich">
           <button
             onClick={props.onOpen}
             className="header__sandwich-icon"
           ></button>
-        </div>
       </MediaQuery>
     </header>
   );
