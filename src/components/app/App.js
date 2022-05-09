@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { scroller } from "react-scroll";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Header from "../header/Header";
 import Main from "../main/Main";
 import Footer from "../footer/Footer";
@@ -7,6 +9,11 @@ import PopupNavigation from "../popupNavigtion/PopupNavigation";
 
 function App() {
   const [isPopupNavigatorOpen, setIsPopupNavigatorOpen] = useState(false);
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+    Aos.refresh();
+  }, []);
 
   //Open/close navigation when page's size max-width 840px
   const handleOpenPopup = () => {

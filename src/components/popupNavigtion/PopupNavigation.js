@@ -3,6 +3,7 @@ import Navigation from "../navigation/Navigation";
 import Links from "../links/Links";
 
 function PopupNavigation(props) {
+
   return (
     <div
       className={`popupNavigation ${
@@ -10,8 +11,7 @@ function PopupNavigation(props) {
       }`}
     >
       <div className="popupNavigation__container">
-        <Navigation onClose={props.onClose}
-        />
+        <Navigation onClose={props.onClose} />
         <Links />
       </div>
     </div>

@@ -1,14 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import MediaQuery from "react-responsive";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import Skills from "../skills/Skills";
 
 function Profile() {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-    Aos.refresh();
-  }, []);
 
   return (
     <section id="profile" className="profile">

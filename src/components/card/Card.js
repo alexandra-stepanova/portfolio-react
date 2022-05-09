@@ -1,14 +1,7 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 import MediaQuery from "react-responsive";
 
 function Card(card) {
-  useEffect(() => {
-    Aos.init({ duration: 500 });
-    Aos.refresh();
-  }, []);
-
   return (
     <li className="card">
       <MediaQuery minWidth={701}>

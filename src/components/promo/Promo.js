@@ -1,12 +1,6 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 function Promo() {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-    Aos.refresh();
-  }, []);
 
   return (
     <section className="promo">
@@ -29,7 +23,7 @@ function Promo() {
           data-aos-easing="ease-in-out"
         >
           Currently, I'm a freelance developer looking to land a permanent job.
-          Meanwhile, I'm developing a few small projects and continue learning Redux, VUE and UI/UX.
+          Meanwhile, I'm developing a few small projects and continue learning Redux, TS and UI/UX.
         </p>
       </div>
       <div className="promo__image"></div>
