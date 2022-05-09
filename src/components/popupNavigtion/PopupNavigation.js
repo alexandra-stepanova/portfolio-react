@@ -10,10 +10,6 @@ function PopupNavigation(props) {
       }`}
     >
       <div className="popupNavigation__container">
-        <button
-          onClick={props.onClose}
-          className="popupNavigation__close-button"
-        ></button>
         <Navigation onClose={props.onClose}
         />
         <Links />
