@@ -4,27 +4,36 @@ import logo from "../../images/arctic-fox.svg";
 import Links from "../links/Links";
 import MediaQuery from "react-responsive";
 
-function Header(props) {
+function Header({ onClose, onOpen, onScroll, isOpen }) {
+  function togglePopup(evt) {
+    if (evt.target.classList.contains("toggle")) {
+      return onClose();
+    } else {
+      return onOpen();
+    }
+  }
+
   return (
     <header className="header">
       <img
         className="header__image"
         src={logo}
         alt="arctic-fox"
-        onClick={props.onScroll}
+        onClick={onScroll}
       />
-      <MediaQuery minWidth={701}>
-        <Navigation
-          onOpen={props.onOpen}
-          onClose={props.onClose}
-        />
+      <MediaQuery minWidth={745}>
+        <Navigation />
         <Links />
       </MediaQuery>
-      <MediaQuery maxWidth={700}>
-          <button
-            onClick={props.onOpen}
-            className="header__sandwich-icon"
-          ></button>
+      <MediaQuery maxWidth={744}>
+        <div
+          onClick={togglePopup}
+          className={`header__sandwich ${isOpen ? "toggle" : ""}`}
+        >
+          <div className="header__sandwich-line" />
+          <div className="header__sandwich-line" />
+          <div className="header__sandwich-line" />
+        </div>
       </MediaQuery>
     </header>
   );

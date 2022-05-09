@@ -1,7 +1,7 @@
 .header {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -9,7 +9,7 @@
   align-items: center;
   padding: 10px 0;
   background-color: inherit;
-  @media screen and (max-width:1439px) {
+  @media screen and (max-width: 1439px) {
     width: 100%;
     padding: 10px 5%;
   }
@@ -119,18 +119,32 @@
   }
 }
 
-.header__sandwich-icon {
-  background-image: url(../../images/sandwich__icon.png);
-  background-size: 45px 45px;
-    height: 53px;
-  color: #fff;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  background-color: inherit;
-  width: 44px;
+.header__sandwich div {
+  width: 32px;
+  height: 4px;
+  margin: 5px;
+  background-color: #fff;
+  transition: all 0.4s ease;
+}
+
+.header__sandwich, .toggle  {
+  display: block;
   cursor: pointer;
+  z-index: 2;
   &:hover {
     opacity: 0.6;
   }
+}
+
+
+.toggle .header__sandwich-line:first-of-type {
+  transform: rotate(-48deg) translate(-5px, 8px);
+}
+
+.toggle .header__sandwich-line:nth-of-type(2) {
+  opacity: 0;
+}
+
+.toggle .header__sandwich-line:last-of-type {
+  transform: rotate(48deg) translate(-4px, -8px);
 }
