@@ -14,10 +14,11 @@
   "devDependencies": {
     "aos": "^3.0.0-beta.6",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1",
     "react-hook-form": "^7.27.1",
-    "react-scripts": "5.0.0",
     "react-responsive": "^9.0.0-beta.6",
+    "react-scripts": "5.0.0",
     "react-scroll": "^1.8.5"
   },
   "scripts": {
