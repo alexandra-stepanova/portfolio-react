@@ -25,21 +25,9 @@ function App() {
       }
     };
 
-    const handleCloseByOverlay = (evt) => {
-      //обработчик для закртия popup по кнопке и overlay
-      if (
-        evt.target.classList.contains("popupNavigation_is-opened") ||
-        evt.target.classList.contains("popupNavigation")
-      ) {
-        closePopup();
-      }
-    };
-
-    document.addEventListener("click", handleCloseByOverlay);
     document.addEventListener("keydown", handleEscClose);
 
     return () => {
-      document.removeEventListener("click", handleCloseByOverlay);
       document.removeEventListener("keydown", handleEscClose);
     };
   }, []);
@@ -57,14 +45,13 @@ function App() {
     <div id="app" className="app">
       <Header
         onOpen={handleOpenPopup}
+        onClose={closePopup}
         onScroll={useScrollToTop}
+        isOpen={isPopupNavigatorOpen}
       />
       <Main />
       <Footer />
-      <PopupNavigation
-        onClose={closePopup}
-        isOpen={isPopupNavigatorOpen}
-      />
+      <PopupNavigation isOpen={isPopupNavigatorOpen} onClose={closePopup}/>
     </div>
   );
 }
