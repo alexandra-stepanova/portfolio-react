@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navigation from "../navigation/Navigation";
 import logo from "../../images/arctic-fox.svg";
 import Links from "../links/Links";
 import MediaQuery from "react-responsive";
 
 function Header({ onClose, onOpen, onScroll, isOpen }) {
-  function togglePopup(evt) {
-    if (evt.target.classList.contains("toggle")) {
-      return onClose();
-    } else {
+  const [click, setClick] = useState(true);
+
+  useEffect(() => {
+    if (!click) {
       return onOpen();
+    } else {
+      return onClose();
     }
-  }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [click]);
 
   return (
     <header className="header">
@@ -27,7 +30,7 @@ function Header({ onClose, onOpen, onScroll, isOpen }) {
       </MediaQuery>
       <MediaQuery maxWidth={744}>
         <div
-          onClick={togglePopup}
+          onClick={() => setClick(!click)}
           className={`header__sandwich ${isOpen ? "toggle" : ""}`}
         >
           <div className="header__sandwich-line" />
