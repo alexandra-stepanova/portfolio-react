@@ -11,7 +11,7 @@ function Main() {
     <main className="main">
       <Promo />
       <Profile />
-      <MediaQuery maxWidth={999}>
+      <MediaQuery maxWidth={591}>
         <Skills />
       </MediaQuery>
       <Projects />

@@ -4,13 +4,7 @@ import { Link } from "react-scroll";
 function Navigation({ onClose }) {
   return (
     <ul className="navigation">
-      <li
-        className="margin-btn"
-        data-aos="fade-up"
-        data-aos-delay="10"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
-      >
+      <li className="margin-btn">
         <Link
           onClick={onClose}
           className="link margin-btn"
@@ -24,13 +18,7 @@ function Navigation({ onClose }) {
           About
         </Link>
       </li>
-      <li
-        className="margin-btn"
-        data-aos="fade-up"
-        data-aos-delay="10"
-        data-aos-duration="2000"
-        data-aos-easing="ease-in-out"
-      >
+      <li className="margin-btn">
         <Link
           className="link"
           activeClass="link-underline"
@@ -44,12 +32,7 @@ function Navigation({ onClose }) {
           Projects
         </Link>
       </li>
-      <li
-        data-aos="fade-up"
-        data-aos-delay="10"
-        data-aos-duration="3000"
-        data-aos-easing="ease-in-out"
-      >
+      <li>
         <Link
           className="link"
           activeClass="link-underline"

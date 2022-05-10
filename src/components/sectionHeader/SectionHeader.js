@@ -1,7 +1,6 @@
 import React from "react";
 
 function SectionHeader({ name }) {
-
   return (
     <div className="sectionHeader">
       <h2

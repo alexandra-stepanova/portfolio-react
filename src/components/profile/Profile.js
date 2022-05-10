@@ -3,14 +3,13 @@ import MediaQuery from "react-responsive";
 import Skills from "../skills/Skills";
 
 function Profile() {
-
   return (
     <section id="profile" className="profile">
       <div className="container profile__container">
-        <MediaQuery minWidth={1000}>
+        <MediaQuery minWidth={592}>
           <Skills />
         </MediaQuery>
-        <MediaQuery maxWidth={999}>
+        <MediaQuery maxWidth={591}>
           <div
             className="profile__avatar profile__avatar-img"
             data-aos="fade-up"

@@ -5,7 +5,7 @@ import MediaQuery from "react-responsive";
 function Skills() {
   return (
     <>
-      <MediaQuery minWidth={1000}>
+      <MediaQuery minWidth={592}>
         <div className="skills">
           <SectionHeader name="Skills" />
           <ul className="skills__grid">
@@ -23,7 +23,7 @@ function Skills() {
           </ul>
         </div>
       </MediaQuery>
-      <MediaQuery maxWidth={999}>
+      <MediaQuery maxWidth={591}>
         <section className="skills">
           <SectionHeader name="Skills" />
           <ul className="skills__grid">

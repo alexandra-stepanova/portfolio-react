@@ -5,7 +5,7 @@
   list-style-type: none;
   align-items: center;
   margin: 0 auto;
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 744px) {
     width: 80%;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +27,7 @@
   &:hover {
     opacity: 0.6;
   }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 744px) {
     font-size: 1.7em;
     margin: 10px 20px 2px;
     padding: 0;
@@ -42,7 +42,7 @@
 }
 
 .margin-btn {
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 744px) {
     margin-bottom: 20px;
   }
 }

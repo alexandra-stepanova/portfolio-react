@@ -3,7 +3,6 @@ import Navigation from "../navigation/Navigation";
 import Links from "../links/Links";
 
 function PopupNavigation(props) {
-
   return (
     <div
       className={`popupNavigation ${

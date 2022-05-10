@@ -58,7 +58,7 @@ function App() {
       />
       <Main />
       <Footer />
-      <PopupNavigation isOpen={isPopupNavigatorOpen} onClose={closePopup}/>
+      <PopupNavigation isOpen={isPopupNavigatorOpen} onClose={closePopup} />
     </div>
   );
 }

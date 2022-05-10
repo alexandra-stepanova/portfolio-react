@@ -17,7 +17,7 @@ function Card(card) {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          <source src={card.video} type="video/mp4"  playsInline />
+          <source src={card.video} type="video/mp4" playsInline />
         </video>
 
         <div

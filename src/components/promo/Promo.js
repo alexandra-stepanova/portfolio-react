@@ -1,7 +1,6 @@
 import React from "react";
 
 function Promo() {
-
   return (
     <section className="promo">
       <div className="promo__container">
@@ -23,7 +22,8 @@ function Promo() {
           data-aos-easing="ease-in-out"
         >
           Currently, I'm a freelance developer looking to land a permanent job.
-          Meanwhile, I'm developing a few small projects and continue learning Redux, TS and UI/UX.
+          Meanwhile, I'm developing a few small projects and continue learning
+          Redux, TS and UI/UX.
         </p>
       </div>
       <div className="promo__image"></div>

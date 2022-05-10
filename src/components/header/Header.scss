@@ -127,7 +127,8 @@
   transition: all 0.4s ease;
 }
 
-.header__sandwich, .toggle  {
+.header__sandwich,
+.toggle {
   display: block;
   cursor: pointer;
   z-index: 2;
@@ -135,7 +136,6 @@
     opacity: 0.6;
   }
 }
-
 
 .toggle .header__sandwich-line:first-of-type {
   transform: rotate(-48deg) translate(-5px, 8px);
