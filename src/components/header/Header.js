@@ -1,21 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navigation from "../navigation/Navigation";
 import logo from "../../images/arctic-fox.svg";
 import Links from "../links/Links";
 import MediaQuery from "react-responsive";
 
-function Header({ onClose, onOpen, onScroll, isOpen }) {
-  const [click, setClick] = useState(true);
-
-  useEffect(() => {
-    if (!click) {
-      return onOpen();
-    } else {
-      return onClose();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [click]);
-
+function Header({ click, setClick, onScroll, isOpen }) {
   return (
     <header className="header">
       <img

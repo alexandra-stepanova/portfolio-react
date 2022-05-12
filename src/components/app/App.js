@@ -9,6 +9,7 @@ import PopupNavigation from "../popupNavigtion/PopupNavigation";
 
 function App() {
   const [isPopupNavigatorOpen, setIsPopupNavigatorOpen] = useState(false);
+  const [click, setClick] = useState(true);
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -23,6 +24,15 @@ function App() {
   const closePopup = () => {
     setIsPopupNavigatorOpen(false);
   };
+
+  useEffect(() => {
+    if (!click) {
+      return handleOpenPopup();
+    } else {
+      return closePopup();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [click]);
 
   useEffect(() => {
     //обработчик закрытия попапов по нажатия на ESC и overlay
@@ -51,8 +61,8 @@ function App() {
   return (
     <div id="app" className="app">
       <Header
-        onOpen={handleOpenPopup}
-        onClose={closePopup}
+        click={click}
+        setClick={setClick}
         onScroll={useScrollToTop}
         isOpen={isPopupNavigatorOpen}
       />
