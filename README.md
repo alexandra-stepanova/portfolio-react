@@ -1,7 +1,8 @@
 
 # portfolio-react
 
-<code><img height="500" src="https://portfolio-react-beta.vercel.app"></code>
+**https://portfolio-react-beta.vercel.app/**
+
 ##
 
 This is an landing page-portfolio written in React. The project contains  skills and information about author, information about projects and contact form. UI/UX was developed by me from the scratch.
@@ -33,7 +34,5 @@ To build the project
 ```sh
 npm run build
 ```
-
-Stream 24 
 
 Prepared by Alexandra Stepanova
