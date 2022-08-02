@@ -12,7 +12,7 @@ function Promo() {
           data-aos-easing="ease-in-out"
         >
           <span className="promo__span">Hi. I'm Sasha.</span>
-          <span className="promo__span">A junior Frontend developer.</span>
+          <span className="promo__span">Frontend developer.</span>
         </h1>
         <p
           className="subtitle"
